@@ -1,7 +1,9 @@
-package com.example.dndinteractive;
+package com.example.dndinteractive.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.dndinteractive.R;
 
 public class MainActivity extends AppCompatActivity {
 
