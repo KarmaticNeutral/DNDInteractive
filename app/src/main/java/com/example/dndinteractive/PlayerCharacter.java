@@ -6,6 +6,8 @@ import com.example.dndinteractive.creatureinfo.Size;
 
 public class PlayerCharacter implements LivingObject {
     private String name;
+    private Sheet sheet;
+    private Location location;
 
     @Override
     public String getName() {
@@ -19,22 +21,22 @@ public class PlayerCharacter implements LivingObject {
 
     @Override
     public Sheet getSheet() {
-        return null;
+        return sheet;
     }
 
     @Override
     public void setSheet(Sheet sheet) {
-
+        this.sheet = sheet;
     }
 
     @Override
     public Location getLocation() {
-        return null;
+        return location;
     }
 
     @Override
     public void setLocation(Location location) {
-
+        this.location = location;
     }
 
     @Override
