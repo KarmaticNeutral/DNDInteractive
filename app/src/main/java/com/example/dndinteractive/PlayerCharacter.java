@@ -8,6 +8,7 @@ public class PlayerCharacter implements LivingObject {
     private String name;
     private Sheet sheet;
     private Location location;
+    private Size size;
 
     @Override
     public String getName() {
@@ -41,16 +42,17 @@ public class PlayerCharacter implements LivingObject {
 
     @Override
     public void move(int xChange, int yChange) {
-
+        location.addXPos(xChange);
+        location.addYPos(yChange);
     }
 
     @Override
     public Size getSize() {
-        return null;
+        return size;
     }
 
     @Override
     public void setSize(Size size) {
-
+        this.size = size;
     }
 }
